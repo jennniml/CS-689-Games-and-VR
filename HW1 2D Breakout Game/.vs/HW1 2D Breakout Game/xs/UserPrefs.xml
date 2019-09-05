@@ -1,23 +1,27 @@
 ﻿<Properties StartupConfiguration="{AB50C2FF-6E56-7C46-87A2-09A6AD68C13E}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/BallDirection.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/PaddleDirection.cs">
     <Files>
       <File FileName="Assets/BallDirection.cs" Line="16" Column="9" />
+      <File FileName="Assets/PaddleDirection.cs" Line="7" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="HW1 2D Breakout Game" expanded="True">
             <Node name="Assets" expanded="True">
-              <Node name="BallDirection.cs" selected="True" />
+              <Node name="PaddleDirection.cs" selected="True" />
             </Node>
           </Node>
         </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="91a7f893-6c5a-440c-9345-775504269837" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="021f0bd0-52c0-4b5c-8ac0-81da6771cacd" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
