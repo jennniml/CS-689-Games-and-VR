@@ -290,4 +290,5 @@
 /define:CSHARP_7_OR_LATER
 /define:CSHARP_7_3_OR_NEWER
 "Assets/BallDirection.cs"
+"Assets/NewBehaviourScript.cs"
 "Assets/PaddleDirection.cs"

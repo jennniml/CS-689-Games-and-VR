@@ -4,14 +4,15 @@ using UnityEngine;
 
 public class PaddleDirection : MonoBehaviour
 {
-    public KeyCode moveUp = KeyCode.W;
-    public KeyCode moveDown = KeyCode.S;
-    public KeyCode moveLeft = KeyCode.A;
-    public KeyCode moveRight = KeyCode.D;
+    private KeyCode moveUp = KeyCode.W;
+    private KeyCode moveDown = KeyCode.S;
+    private KeyCode moveLeft = KeyCode.A;
+    private KeyCode moveRight = KeyCode.D;
 
-    public float speed = 8.0f;
-    public float boundX = 5f;
-    public float boundY = 4.75f;
+    private float speedX = 5.0f;
+    private float speedY = 5.0f;
+    private float boundX = 7.0f;
+    private float boundY = 4.75f;
 
     private Rigidbody2D rb;
 
@@ -27,24 +28,30 @@ public class PaddleDirection : MonoBehaviour
         var vel = rb.velocity;
         if(Input.GetKey(moveUp))
         {
-            vel.y = speed;
+            vel.y = speedY;
             vel.x = 0.0f;
         }
         else if(Input.GetKey(moveDown))
         {
-            vel.y = -speed;
+            vel.y = -speedY;
             vel.x = 0.0f;
         }
         else if(Input.GetKey(moveLeft))
         {
-            vel.x = -speed;
+            vel.x = -speedX;
             vel.y = 0.0f;
         }
         else if(Input.GetKey(moveRight))
         {
-            vel.x = speed;
+            vel.x = speedX;
             vel.y = 0.0f;
         }
+        else if(!Input.anyKey)
+        {
+            vel.y = 0.0f;
+            vel.x = 0.0f;
+        }
+
         rb.velocity = vel;
 
         // set bound to stop at walls
