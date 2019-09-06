@@ -62,8 +62,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\BallDirection.cs" />
-    <Compile Include="Assets\NewBehaviourScript.cs" />
+    <Compile Include="Assets\Destroy.cs" />
     <Compile Include="Assets\PaddleDirection.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>/Users/JennL/CS 689 Games and VR/HW1 2D Breakout Game/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
