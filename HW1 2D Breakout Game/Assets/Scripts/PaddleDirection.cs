@@ -9,9 +9,9 @@ public class PaddleDirection : MonoBehaviour
     private KeyCode moveLeft = KeyCode.A;
     private KeyCode moveRight = KeyCode.D;
 
-    private float speedX = 5.0f;
-    private float speedY = 5.0f;
-    private float boundX = 7.5f;
+    private float speedX = 5.5f;
+    private float speedY = 5.5f;
+    private float boundX = 8f;
     private float boundY = 4.75f;
 
     private Rigidbody2D rb;
