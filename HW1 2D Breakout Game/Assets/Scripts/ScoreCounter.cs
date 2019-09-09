@@ -7,7 +7,7 @@ public class ScoreCounter : MonoBehaviour
 	public TextUpdateUI ui;
     
     public int greyNum = 84;    // number of grey breaks
-    public int scarletNum = 41; // number of scarlet breaks
+    public int scarletNum = 42; // number of scarlet breaks
 
     private void Start()
     {
