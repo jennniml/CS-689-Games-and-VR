@@ -7,6 +7,8 @@ TagManager:
   - square
   - Grey
   - Scarlet
+  - ShowOnPause
+  - ui
   layers:
   - Default
   - TransparentFX

@@ -290,5 +290,8 @@
 /define:CSHARP_7_OR_LATER
 /define:CSHARP_7_3_OR_NEWER
 "Assets/Scripts/BallSpeed.cs"
-"Assets/Scripts/Destroy.cs"
 "Assets/Scripts/PaddleDirection.cs"
+"Assets/Scripts/Play.cs"
+"Assets/Scripts/ScoreCounter.cs"
+"Assets/Scripts/ScoreUpdateUI.cs"
+"Assets/Scripts/UIManager.cs"

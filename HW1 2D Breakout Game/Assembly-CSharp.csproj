@@ -63,8 +63,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\BallSpeed.cs" />
-    <Compile Include="Assets\Scripts\Destroy.cs" />
     <Compile Include="Assets\Scripts\PaddleDirection.cs" />
+    <Compile Include="Assets\Scripts\Play.cs" />
+    <Compile Include="Assets\Scripts\ScoreCounter.cs" />
+    <Compile Include="Assets\Scripts\TextUpdateUI.cs" />
+    <Compile Include="Assets\Scripts\UIManager.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>/Users/JennL/CS 689 Games and VR/HW1 2D Breakout Game/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
