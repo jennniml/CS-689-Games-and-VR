@@ -1,17 +1,23 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ScoreCounter : MonoBehaviour
 {
-	public TextUpdateUI ui;
-    
-    public int greyNum = 84;    // number of grey breaks
-    public int scarletNum = 42; // number of scarlet breaks
+	public TextUpdateUI textUI;
+    public UIManager ui;
+    public GameObject gameOver, win;
+
+    private int greyNum = 84;    // number of grey breaks
+    private int scarletNum = 42; // number of scarlet breaks
 
     private void Start()
     {
-		ui = GameObject.FindWithTag("ui").GetComponent<TextUpdateUI>();
+        textUI = GameObject.FindWithTag("ui").GetComponent<TextUpdateUI>();
+        ui = GameObject.FindWithTag("ui").GetComponent<UIManager>();
+        gameOver.SetActive(false);
+        win.SetActive(false);
     }
 
     // Grey or Scarlet Break dissapears when hit by ball
@@ -20,14 +26,34 @@ public class ScoreCounter : MonoBehaviour
         if (col.gameObject.tag == "Grey")
         {
             greyNum--;
-            ui.calculateScore(greyNum, scarletNum);
+            textUI.calculateScore(greyNum, scarletNum);
             Destroy(col.gameObject);
+
+            checkDone();
         }
         if (col.gameObject.tag == "Scarlet")
         {
             scarletNum--;
-            ui.calculateScore(greyNum, scarletNum);
+            textUI.calculateScore(greyNum, scarletNum);
             Destroy(col.gameObject);
+
+            checkDone();
+        }
+
+        // Game Over when ball hits bottom wall
+        if (col.gameObject.name == "Lower_Wall")
+        {
+            ui.FinishControl();
+            gameOver.SetActive(true);
+        }
+    }
+
+    void checkDone()
+    {
+        if (scarletNum==0)
+        {
+            ui.FinishControl();
+            win.SetActive(true);
         }
     }
 }

@@ -64,7 +64,6 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\BallSpeed.cs" />
     <Compile Include="Assets\Scripts\PaddleDirection.cs" />
-    <Compile Include="Assets\Scripts\Play.cs" />
     <Compile Include="Assets\Scripts\ScoreCounter.cs" />
     <Compile Include="Assets\Scripts\TextUpdateUI.cs" />
     <Compile Include="Assets\Scripts\UIManager.cs" />

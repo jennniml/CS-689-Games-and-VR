@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+
 public class UIManager : MonoBehaviour
 {
     GameObject[] pauseObjects;
@@ -25,7 +26,7 @@ public class UIManager : MonoBehaviour
     }
 
 
-    //Reloads the Level (Finish)
+    // Stops the game
     public void FinishControl()
     {
         firstTry = false;
@@ -33,7 +34,7 @@ public class UIManager : MonoBehaviour
         showPaused();
     }
 
-    //controls the pausing of the scene (Start)
+    // Starts the game (Start)
     public void StartControl()
     {
         if (!firstTry)

@@ -9,8 +9,8 @@ public class PaddleDirection : MonoBehaviour
     private KeyCode moveLeft = KeyCode.A;
     private KeyCode moveRight = KeyCode.D;
 
-    private float speedX = 5.5f;
-    private float speedY = 5.5f;
+    private float speedX = 6.0f;
+    private float speedY = 6.0f;
     private float boundX = 8f;
     private float boundY = 4.75f;
 
@@ -56,9 +56,9 @@ public class PaddleDirection : MonoBehaviour
 
         // set bound to stop at walls
         var pos = transform.position;
-        if(pos.y > boundY)
+        if(pos.y > boundY+1)
         {
-            pos.y = boundY;
+            pos.y = boundY+1;
         }
         else if(pos.y < -boundY)
         {

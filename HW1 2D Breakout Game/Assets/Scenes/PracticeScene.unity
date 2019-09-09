@@ -3666,8 +3666,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ui: {fileID: 0}
-  greyNum: 84
-  scarletNum: 41
 --- !u!114 &672633823
 MonoBehaviour:
   m_ObjectHideFlags: 0
