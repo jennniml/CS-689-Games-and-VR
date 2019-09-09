@@ -1,15 +1,19 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class UIManager : MonoBehaviour
 {
     GameObject[] pauseObjects;
+    private bool firstTry;      // checks if 1st time playing game
+    
 
     // Use this for initialization
     void Start()
     {
-        Time.timeScale = 1;
+        firstTry = true;
+        Time.timeScale = 0;
         pauseObjects = GameObject.FindGameObjectsWithTag("ShowOnPause");
         hidePaused();
     }
@@ -17,44 +21,28 @@ public class UIManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
-        //uses the p button to pause and unpause the game
-        if (Input.GetKeyDown(KeyCode.P))
-        {
-            if (Time.timeScale == 1)
-            {
-                Time.timeScale = 0;
-                showPaused();
-            }
-            else if (Time.timeScale == 0)
-            {
-                Debug.Log("high");
-                Time.timeScale = 1;
-                hidePaused();
-            }
-        }
+        
     }
 
 
-    //Reloads the Level
-    public void Reload()
+    //Reloads the Level (Finish)
+    public void FinishControl()
     {
-        Application.LoadLevel(Application.loadedLevel);
+        firstTry = false;
+        Time.timeScale = 0;
+        showPaused();
     }
 
-    //controls the pausing of the scene
-    public void pauseControl()
+    //controls the pausing of the scene (Start)
+    public void StartControl()
     {
-        if (Time.timeScale == 1)
+        if (!firstTry)
         {
-            Time.timeScale = 0;
-            showPaused();
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
-        else if (Time.timeScale == 0)
-        {
-            Time.timeScale = 1;
-            hidePaused();
-        }
+        
+        Time.timeScale = 1;
+        hidePaused();
     }
 
     //shows objects with ShowOnPause tag
@@ -75,9 +63,4 @@ public class UIManager : MonoBehaviour
         }
     }
 
-    //loads inputted level
-    public void LoadLevel(string level)
-    {
-        Application.LoadLevel(level);
-    }
 }

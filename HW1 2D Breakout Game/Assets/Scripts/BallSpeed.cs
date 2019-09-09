@@ -13,7 +13,7 @@ public class BallSpeed : MonoBehaviour
         Rigidbody2D rb = GetComponent<Rigidbody2D>();
     }
 
-    // Update is called once per frame
+    // Keeps ball's speed constant
     void Update()
     {
         rb.velocity = constantSpeed * (rb.velocity.normalized);

@@ -8,18 +8,6 @@ public class TextUpdateUI : MonoBehaviour
 	int score;  // score of game
     public Text scoreText, greyText, scarletText;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-		
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-		
-    }
-
 	// Calculates the score based on remaining breaks
 	public void calculateScore(int greyNum, int scarletNum)
 	{

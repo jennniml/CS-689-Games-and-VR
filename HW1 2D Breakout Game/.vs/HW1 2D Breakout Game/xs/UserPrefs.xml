@@ -1,9 +1,10 @@
 ﻿<Properties StartupConfiguration="{AB50C2FF-6E56-7C46-87A2-09A6AD68C13E}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/ScoreCounter.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/UIManager.cs">
     <Files>
-      <File FileName="Assets/Scripts/UIManager.cs" />
-      <File FileName="Assets/Scripts/ScoreUpdateUI.cs" Line="14" Column="3" />
-      <File FileName="Assets/Scripts/ScoreCounter.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/UIManager.cs" Line="24" Column="1" />
+      <File FileName="Assets/Scripts/ScoreUpdateUI.cs" Line="9" Column="50" />
+      <File FileName="Assets/Scripts/ScoreCounter.cs" Line="19" Column="5" />
+      <File FileName="Assets/Scripts/PaddleDirection.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -11,7 +12,7 @@
           <Node name="HW1 2D Breakout Game" expanded="True">
             <Node name="Assets" expanded="True">
               <Node name="Scripts" expanded="True">
-                <Node name="ScoreCounter.cs" selected="True" />
+                <Node name="UIManager.cs" selected="True" />
               </Node>
             </Node>
           </Node>

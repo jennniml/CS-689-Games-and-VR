@@ -6,8 +6,8 @@ public class ScoreCounter : MonoBehaviour
 {
 	public TextUpdateUI ui;
     
-    public int greyNum = 84;
-    public int scarletNum = 41;
+    public int greyNum = 84;    // number of grey breaks
+    public int scarletNum = 41; // number of scarlet breaks
 
     private void Start()
     {
@@ -19,20 +19,15 @@ public class ScoreCounter : MonoBehaviour
     {
         if (col.gameObject.tag == "Grey")
         {
-            
             greyNum--;
             ui.calculateScore(greyNum, scarletNum);
             Destroy(col.gameObject);
         }
         if (col.gameObject.tag == "Scarlet")
         {
-            
             scarletNum--;
             ui.calculateScore(greyNum, scarletNum);
             Destroy(col.gameObject);
         }
-
     }
-
-    
 }
