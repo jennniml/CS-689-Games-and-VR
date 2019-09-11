@@ -2,7 +2,7 @@
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/ScoreCounter.cs">
     <Files>
       <File FileName="Assets/Scripts/UIManager.cs" Line="11" Column="5" />
-      <File FileName="Assets/Scripts/ScoreCounter.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/ScoreCounter.cs" Line="51" Column="65" />
       <File FileName="Assets/Scripts/PaddleDirection.cs" />
       <File FileName="Assets/Scripts/TextUpdateUI.cs" />
     </Files>
@@ -22,7 +22,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="dd985e7f-5161-4630-a3f2-65dbb35c4218" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="359aa73c-159d-43c3-bc70-597e59c6d0a5" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

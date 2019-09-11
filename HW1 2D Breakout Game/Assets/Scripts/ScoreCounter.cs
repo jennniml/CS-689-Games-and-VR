@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Audio;
 
 public class ScoreCounter : MonoBehaviour
 {
@@ -46,6 +47,9 @@ public class ScoreCounter : MonoBehaviour
             ui.FinishControl();
             gameOver.SetActive(true);
         }
+
+        // Play ball bounce sound when ball collides with object
+        gameObject.GetComponent<AudioSource>().Play();
     }
 
     void checkDone()
