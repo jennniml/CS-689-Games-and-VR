@@ -1,8 +1,8 @@
 ﻿<Properties StartupConfiguration="{AB50C2FF-6E56-7C46-87A2-09A6AD68C13E}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/UIManager.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/ScoreCounter.cs">
     <Files>
       <File FileName="Assets/Scripts/UIManager.cs" Line="11" Column="5" />
-      <File FileName="Assets/Scripts/ScoreCounter.cs" />
+      <File FileName="Assets/Scripts/ScoreCounter.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/PaddleDirection.cs" />
       <File FileName="Assets/Scripts/TextUpdateUI.cs" />
     </Files>
@@ -12,7 +12,7 @@
           <Node name="HW1 2D Breakout Game" expanded="True">
             <Node name="Assets" expanded="True">
               <Node name="Scripts" expanded="True">
-                <Node name="UIManager.cs" selected="True" />
+                <Node name="ScoreCounter.cs" selected="True" />
               </Node>
             </Node>
           </Node>
@@ -22,7 +22,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="e536f751-9a9f-4688-ab44-d994321a64f6" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="dd985e7f-5161-4630-a3f2-65dbb35c4218" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
