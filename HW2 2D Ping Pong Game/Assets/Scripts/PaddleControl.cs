@@ -25,6 +25,7 @@ public class PaddleControl : MonoBehaviour
         movePaddle(rightPaddle, rightMoveUp, rightMoveDown);
     }
 
+    // Moves the left and right paddle up/down
     void movePaddle(Rigidbody2D p, KeyCode up, KeyCode down)
     {
         if (Input.GetKey(up))

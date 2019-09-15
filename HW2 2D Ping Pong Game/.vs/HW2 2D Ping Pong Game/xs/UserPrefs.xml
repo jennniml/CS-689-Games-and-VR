@@ -1,8 +1,8 @@
 ﻿<Properties StartupConfiguration="{BBD4FBF3-04EF-0F75-3B38-FD8DC9DED534}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/PaddleControl.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/GameSetup.cs">
     <Files>
-      <File FileName="Assets/Scripts/PaddleControl.cs" Line="42" Column="37" />
-      <File FileName="Assets/Scripts/paddle.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/PaddleControl.cs" Line="27" Column="1" />
+      <File FileName="Assets/Scripts/GameSetup.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -10,7 +10,7 @@
           <Node name="HW2 2D Ping Pong Game" expanded="True">
             <Node name="Assets" expanded="True">
               <Node name="Scripts" expanded="True">
-                <Node name="PaddleControl.cs" selected="True" />
+                <Node name="GameSetup.cs" selected="True" />
               </Node>
             </Node>
           </Node>
@@ -20,7 +20,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="874422a3-8ea3-4e5b-b1cb-bfb64a1dd22b" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="1b5f9e91-3b6c-4ac0-bf6f-c8921af7464a" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

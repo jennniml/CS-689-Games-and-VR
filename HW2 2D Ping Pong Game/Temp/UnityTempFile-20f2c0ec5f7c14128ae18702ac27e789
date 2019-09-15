@@ -289,4 +289,5 @@
 /define:ENABLE_TIMELINE
 /define:CSHARP_7_OR_LATER
 /define:CSHARP_7_3_OR_NEWER
+"Assets/Scripts/GameSetup.cs"
 "Assets/Scripts/PaddleControl.cs"
