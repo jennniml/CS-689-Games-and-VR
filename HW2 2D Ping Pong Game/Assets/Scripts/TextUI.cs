@@ -15,12 +15,6 @@ public class TextUI : MonoBehaviour
         HideOptions();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     // Update score text
     public void UpdateScoreUI(int left, int right)
     {
@@ -35,7 +29,7 @@ public class TextUI : MonoBehaviour
         ShowOptions();
     }
 
-    // Shows objects with 
+    // Shows objects after win
     void ShowOptions()
     {
         foreach (GameObject g in options)
@@ -44,6 +38,7 @@ public class TextUI : MonoBehaviour
         }
     }
 
+    // Hides objects before win
     void HideOptions()
     {
         foreach (GameObject g in options)

@@ -63,12 +63,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\BallControl.cs" />
-    <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\Scripts\GameSetup.cs" />
     <Compile Include="Assets\Scripts\ManageGame.cs" />
     <Compile Include="Assets\Scripts\PaddleControl.cs" />
     <Compile Include="Assets\Scripts\SideWalls.cs" />
     <Compile Include="Assets\Scripts\TextUI.cs" />
+    <Compile Include="Assets\Scripts\UIManager.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>/Users/JennL/CS 689 Games and VR/HW2 2D Ping Pong Game/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>

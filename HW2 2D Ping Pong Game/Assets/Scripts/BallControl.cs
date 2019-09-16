@@ -12,6 +12,7 @@ public class BallControl : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         Invoke("startBall", 2);
+        
         //startBall();
     }
 
@@ -39,7 +40,7 @@ public class BallControl : MonoBehaviour
 	}
 
     // Ball goes left or right randomly at start of game
-    void startBall()
+    public void startBall()
     {
         int randomNum = Random.Range(0, 2);
         int randomX = Random.Range(45, 55);
