@@ -19,7 +19,7 @@ public class BallControl : MonoBehaviour
     {
         if (transform.position.y == 0)
         {
-            Debug.Log("Ball is horizontal... fix it");
+            Debug.Log("Ball is horizontal... fix it!");
         }
     }
 
@@ -43,12 +43,17 @@ public class BallControl : MonoBehaviour
         Debug.Log(randomX + " : " + randomY);
     }
 
-    //
-    private void OnCollisionEnter2D(Collision2D col)
+    // Ball's direction is affected by paddle velocity
+    void OnCollisionEnter2D(Collision2D col)
     {
+        float paddleVelocity = col.collider.GetComponent<Rigidbody2D>().velocity.y;
+        float velocityY = GetComponent<Rigidbody2D>().velocity.y;
+
         if (col.collider.tag == "LeftPaddle" || col.collider.tag == "RightPaddle")
         {
-            Debug.Log("ITS WORKING!!!");
+            GetComponent<Rigidbody2D>().velocity = new Vector2(
+                GetComponent<Rigidbody2D>().velocity.x,
+                velocityY / 2 + paddleVelocity / 3);
         }
     }
 }
