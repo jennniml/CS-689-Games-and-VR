@@ -7,6 +7,7 @@ TagManager:
   - LeftPaddle
   - RightPaddle
   - ui
+  - Paddle
   layers:
   - Default
   - TransparentFX

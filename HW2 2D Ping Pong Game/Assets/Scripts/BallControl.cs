@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class BallControl : MonoBehaviour
 {
@@ -51,7 +52,10 @@ public class BallControl : MonoBehaviour
             GetComponent<Rigidbody2D>().velocity = new Vector2(
                 GetComponent<Rigidbody2D>().velocity.x,
                 velocityY / 2 + paddleVelocity / 3);
-        }
+
+			// Play ball bounce sound when ball collides with paddles
+			GetComponent<AudioSource>().Play();
+		}
     }
 
     void ResetBall()
