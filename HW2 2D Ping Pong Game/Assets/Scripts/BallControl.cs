@@ -33,6 +33,9 @@ public class BallControl : MonoBehaviour
 			//Debug.Log("Before: " + xVel);
 			//Debug.Log("After: " + rb.velocity.x);
 		}
+
+		// Avoid horizontal ball
+		
 	}
 
     // Ball goes left or right randomly at start of game

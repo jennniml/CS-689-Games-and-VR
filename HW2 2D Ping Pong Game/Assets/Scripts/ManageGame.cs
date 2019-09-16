@@ -32,8 +32,16 @@ public class ManageGame : MonoBehaviour
         {
             leftScore++;
         }
-
         textUI.UpdateScoreUI(leftScore, rightScore);
+
+        if (rightScore == 5)
+        {
+            textUI.WinText("Right Player");
+        }
+        else if (leftScore == 5)
+        {
+            textUI.WinText("Left Player");
+        }
     }
 
 
