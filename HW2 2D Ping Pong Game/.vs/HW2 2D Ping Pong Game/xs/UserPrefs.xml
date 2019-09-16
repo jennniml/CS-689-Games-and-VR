@@ -1,11 +1,10 @@
 ﻿<Properties StartupConfiguration="{BBD4FBF3-04EF-0F75-3B38-FD8DC9DED534}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/SideWalls.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/BallControl.cs">
     <Files>
-      <File FileName="Assets/Scripts/PaddleControl.cs" Line="58" Column="10" />
-      <File FileName="Assets/Scripts/GameSetup.cs" Line="8" Column="67" />
-      <File FileName="Assets/Scripts/BallControl.cs" Line="48" Column="6" />
-      <File FileName="Assets/Scripts/GameManager.cs" Line="31" Column="25" />
-      <File FileName="Assets/Scripts/SideWalls.cs" Line="19" Column="1" />
+      <File FileName="Assets/Scripts/SideWalls.cs" Line="11" Column="9" />
+      <File FileName="Assets/Scripts/TextUI.cs" Line="13" Column="9" />
+      <File FileName="Assets/Scripts/ManageGame.cs" Line="21" Column="1" />
+      <File FileName="Assets/Scripts/BallControl.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -13,7 +12,7 @@
           <Node name="HW2 2D Ping Pong Game" expanded="True">
             <Node name="Assets" expanded="True">
               <Node name="Scripts" expanded="True">
-                <Node name="SideWalls.cs" selected="True" />
+                <Node name="BallControl.cs" selected="True" />
               </Node>
             </Node>
           </Node>

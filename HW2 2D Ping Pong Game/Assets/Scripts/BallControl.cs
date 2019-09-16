@@ -53,4 +53,14 @@ public class BallControl : MonoBehaviour
                 velocityY / 2 + paddleVelocity / 3);
         }
     }
+
+    void ResetBall()
+	{
+		// reset velocity
+		rb.velocity = Vector2.zero;
+		// reset ball's position to center
+		transform.position = Vector2.zero;
+
+		Invoke("startBall", 2);
+	}
 }
