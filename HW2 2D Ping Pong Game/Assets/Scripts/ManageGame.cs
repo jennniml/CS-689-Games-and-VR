@@ -34,9 +34,6 @@ public class ManageGame : MonoBehaviour
         }
 
         textUI.UpdateScoreUI(leftScore, rightScore);
-
-        Debug.Log("Left Score: " + leftScore);
-        Debug.Log("Right Score: " + rightScore);
     }
 
 

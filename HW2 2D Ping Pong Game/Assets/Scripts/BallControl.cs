@@ -18,23 +18,35 @@ public class BallControl : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
-    }
+        // Keeps ball speed constant
+		float xVel = rb.velocity.x;
+		if (xVel < 9 && xVel > -9.5 && xVel != 0)
+		{
+			if (xVel > 0)
+			{
+				rb.velocity = new Vector2(9, rb.velocity.y);
+			}
+            else
+			{
+				rb.velocity = new Vector2(-9, rb.velocity.y);
+			}
+			//Debug.Log("Before: " + xVel);
+			//Debug.Log("After: " + rb.velocity.x);
+		}
+	}
 
     // Ball goes left or right randomly at start of game
     void startBall()
     {
         int randomNum = Random.Range(0, 2);
-        int randomX = Random.Range(30, 45);
+        int randomX = Random.Range(45, 55);
         int randomY = Random.Range(-15, 15);
         if (randomNum < 1)
         {
-            Debug.Log("LEFT...");
             rb.AddForce(new Vector2(-randomX, randomY));
         }
         else
         {
-            Debug.Log("RIGHT...");
             rb.AddForce(new Vector2(randomX, randomY));
         }
 
