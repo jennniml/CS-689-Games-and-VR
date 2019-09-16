@@ -10,17 +10,14 @@ public class BallControl : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        startBall();
-        
+        Invoke("startBall", 2);
+        //startBall();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (transform.position.y == 0)
-        {
-            Debug.Log("Ball is horizontal... fix it!");
-        }
+        
     }
 
     // Ball goes left or right randomly at start of game
@@ -46,11 +43,11 @@ public class BallControl : MonoBehaviour
     // Ball's direction is affected by paddle velocity
     void OnCollisionEnter2D(Collision2D col)
     {
-        float paddleVelocity = col.collider.GetComponent<Rigidbody2D>().velocity.y;
-        float velocityY = GetComponent<Rigidbody2D>().velocity.y;
-
         if (col.collider.tag == "LeftPaddle" || col.collider.tag == "RightPaddle")
         {
+            float paddleVelocity = col.collider.GetComponent<Rigidbody2D>().velocity.y;
+            float velocityY = GetComponent<Rigidbody2D>().velocity.y;
+
             GetComponent<Rigidbody2D>().velocity = new Vector2(
                 GetComponent<Rigidbody2D>().velocity.x,
                 velocityY / 2 + paddleVelocity / 3);

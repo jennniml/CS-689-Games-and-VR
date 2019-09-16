@@ -6,7 +6,6 @@ public class GameSetup : MonoBehaviour
 {
     public Camera mainCam;
     public BoxCollider2D topWall, bottomWall, leftWall, rightWall;
-    public Transform playerLeft, playerRight;
 
     // Start is called before the first frame update
     void Awake()
