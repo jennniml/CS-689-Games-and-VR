@@ -207,8 +207,8 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 73567944}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.025974026, y: 0.025974026, z: 0.025974026}
+  m_LocalPosition: {x: 0, y: 0, z: 90}
+  m_LocalScale: {x: 0.023041476, y: 0.023041476, z: 0.023041476}
   m_Children:
   - {fileID: 1524739805}
   - {fileID: 1816927592}
@@ -221,7 +221,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 616, y: 385}
+  m_SizeDelta: {x: 693.99994, y: 433.99997}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &324433567
 GameObject:
@@ -882,7 +882,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b51b35e63a8c4f8ba00939d3cfbdd8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ball: {fileID: 0}
+  leftText: {fileID: 0}
+  rightText: {fileID: 0}
+  winText: {fileID: 0}
 --- !u!1 &1606829705
 GameObject:
   m_ObjectHideFlags: 0

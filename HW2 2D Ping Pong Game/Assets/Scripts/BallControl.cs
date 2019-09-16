@@ -53,8 +53,6 @@ public class BallControl : MonoBehaviour
         {
             rb.AddForce(new Vector2(randomX, randomY));
         }
-
-        Debug.Log(randomX + " : " + randomY);
     }
 
     // Ball's direction is affected by paddle velocity

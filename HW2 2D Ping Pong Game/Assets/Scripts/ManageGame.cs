@@ -7,13 +7,13 @@ public class ManageGame : MonoBehaviour
 {
     public int leftScore = 0;
     public int rightScore = 0;
-    public TextUI textUI;
-    private int winningScore = 3;
+    public UIManager textUI;
+    private int winningScore = 10;
 
     // Start is called before the first frame update
     void Start()
     {
-        textUI = GameObject.FindWithTag("ui").GetComponent<TextUI>();
+        textUI = GameObject.FindWithTag("ui").GetComponent<UIManager>();
     }
 
     // Update score
@@ -21,11 +21,11 @@ public class ManageGame : MonoBehaviour
     {
         if (wallID == "leftWall")
         {
-            rightScore++;
+            leftScore++;
         }
         else
         {
-            leftScore++;
+            rightScore++;
         }
         textUI.UpdateScoreUI(leftScore, rightScore);
 
@@ -52,6 +52,5 @@ public class ManageGame : MonoBehaviour
     {
         //firstTry = false;
         Time.timeScale = 0;
-
     }
 }
