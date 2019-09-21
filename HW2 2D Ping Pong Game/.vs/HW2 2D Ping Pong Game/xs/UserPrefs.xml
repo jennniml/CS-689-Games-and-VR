@@ -1,12 +1,12 @@
 ﻿<Properties StartupConfiguration="{BBD4FBF3-04EF-0F75-3B38-FD8DC9DED534}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/ManageGame.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/TextUI.cs">
     <Files>
-      <File FileName="Assets/Scripts/BallControl.cs" Line="38" Column="3" />
-      <File FileName="Assets/Scripts/PaddleControl.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/SideWalls.cs" Line="21" Column="58" />
-      <File FileName="Assets/Scripts/TextUI.cs" Line="15" Column="23" />
-      <File FileName="Assets/Scripts/ManageGame.cs" Line="17" Column="6" />
-      <File FileName="Assets/Scripts/UIManager.cs" Line="19" Column="1" />
+      <File FileName="Assets/Scripts/BallControl.cs" Line="55" Column="10" />
+      <File FileName="Assets/Scripts/PaddleControl.cs" />
+      <File FileName="Assets/Scripts/SideWalls.cs" />
+      <File FileName="Assets/Scripts/TextUI.cs" Line="4" Column="22" />
+      <File FileName="Assets/Scripts/ManageGame.cs" />
+      <File FileName="Assets/Scripts/UIManager.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -14,7 +14,7 @@
           <Node name="HW2 2D Ping Pong Game" expanded="True">
             <Node name="Assets" expanded="True">
               <Node name="Scripts" expanded="True">
-                <Node name="ManageGame.cs" selected="True" />
+                <Node name="TextUI.cs" selected="True" />
               </Node>
             </Node>
           </Node>
@@ -24,7 +24,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="80c01c0d-575e-4312-81e3-7da8139a0756" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="47f69ae4-5199-4108-9c7e-aeebf9e14730" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
