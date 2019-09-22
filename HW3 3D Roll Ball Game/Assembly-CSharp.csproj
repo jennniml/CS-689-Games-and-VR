@@ -62,6 +62,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\PlayerControl.cs" />
     <Compile Include="Assets\Scripts\UIManager.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>/Users/JennL/CS 689 Games and VR/HW3 3D Roll Ball Game/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
