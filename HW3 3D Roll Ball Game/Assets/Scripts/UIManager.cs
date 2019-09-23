@@ -6,37 +6,18 @@ using UnityEngine.UI;
 
 public class UIManager : MonoBehaviour
 {
-    public Text scoreText, winText;
-    
+    public Text scoreText;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        scoreText.text = "Score: 0";
     }
 
-    // Update is called once per frame
-    void Update()
+        // Update score text
+        public void UpdateScoreUI(int score)
     {
-        
-    }
-
-    // Update score text
-    public void UpdateScoreUI(int score)
-    {
-        scoreText.text = "" + score;
-    }
-
-    public void UpdateWinUI(int score)
-    {
-        if (score<26)
-        {
-            winText.text = "Player Wins!!!";
-        }
-        else
-        {
-            winText.text = "Player Loses";
-        }
+        scoreText.text = "Score: " + score;
     }
 
     // Reloads the Level
