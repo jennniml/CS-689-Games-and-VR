@@ -38,6 +38,9 @@ public class PlayerControl : MonoBehaviour
     // Decrements number of hit object
     private void OnTriggerEnter(Collider other)
     {
+        // Play ping sound when ball collides with objects
+        GetComponent<AudioSource>().Play();
+
         if (other.gameObject.CompareTag("Cube"))
         {
             cubeNum--;
