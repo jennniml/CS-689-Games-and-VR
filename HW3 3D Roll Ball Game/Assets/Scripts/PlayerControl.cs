@@ -10,6 +10,7 @@ public class PlayerControl : MonoBehaviour
     public float speed;
     private int cubeNum = 8, cylinderNum = 4, score;
     public Text winText;
+    GameObject[] options;
 
 
     // Start is called before the first frame update
@@ -19,6 +20,8 @@ public class PlayerControl : MonoBehaviour
         textUI = GameObject.FindWithTag("ui").GetComponent<UIManager>();
         score = 0;
         winText.text = "";
+        options = GameObject.FindGameObjectsWithTag("Hide");
+        HideOptions();
     }
 
     // Moves the player ball object with arrow keys
@@ -80,6 +83,7 @@ public class PlayerControl : MonoBehaviour
             transform.position = Vector2.zero;
             Time.timeScale = 0;
             UpdateWin();
+            ShowOptions();
         }
     }
 
@@ -93,6 +97,24 @@ public class PlayerControl : MonoBehaviour
         else
         {
             winText.text = "Player Wins!!!";
+        }
+    }
+
+    // Hides objects before win
+    void HideOptions()
+    {
+        foreach (GameObject g in options)
+        {
+            g.SetActive(false);
+        }
+    }
+
+    // Shows objects after win
+    void ShowOptions()
+    {
+        foreach (GameObject g in options)
+        {
+            g.SetActive(true);
         }
     }
 }
