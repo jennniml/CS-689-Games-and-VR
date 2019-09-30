@@ -14,6 +14,7 @@ public class CarControl : MonoBehaviour
     private CheckTerrain texture;
     private int oldTexture=1, newTexture;
     private int points;
+    AudioSource blip, engine;
 
     // Start is called before the first frame update
     void Start()
@@ -23,6 +24,9 @@ public class CarControl : MonoBehaviour
         texture = GetComponent<CheckTerrain>();
         points = 20;
         oldTexture = texture.GetTexture();
+        AudioSource[] audios = GetComponents<AudioSource>();
+        blip = audios[0];
+        engine = audios[1];
     }
 
     public void FixedUpdate()
@@ -85,7 +89,7 @@ public class CarControl : MonoBehaviour
             {
                 // Decrease point by 1
                 points--;
-                GetComponent<AudioSource>().Play();
+                blip.Play();
                 textUI.UpdatePointsUI(points);
             }
             oldTexture = newTexture;
@@ -95,16 +99,19 @@ public class CarControl : MonoBehaviour
     // Plays car sound depending on speed
     private void carSound()
     {
-        //while (speed > 0)
-        //{
-            //GetComponent<AudioSource>().Play();
-        //}
+        engine.pitch = speed/40 + .5f;
     }
 
     // Returns the point amount
     public int GetPoints()
     {
         return points;
+    }
+
+    // Returns the point amount
+    public AudioSource GetSound()
+    {
+        return engine;
     }
 
     [System.Serializable]

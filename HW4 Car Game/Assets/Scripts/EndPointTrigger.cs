@@ -12,6 +12,8 @@ public class EndPointTrigger : MonoBehaviour
     // Car hit the end point trigger
     private void OnTriggerEnter(Collider other)
     {
+        car.GetSound().Stop();
+
         if (car.GetPoints()>15)
         {
             winText.text = "You Win!";
