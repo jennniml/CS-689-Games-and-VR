@@ -31,11 +31,12 @@ public class CheckTerrain : MonoBehaviour
         return surfaceIndex;
     }
 
+    /*
     void OnGUI()
     {
-        GUI.Box(new Rect(100, 100, 200, 25), "index: " + surfaceIndex.ToString() + ", name: " + terrainData.splatPrototypes[surfaceIndex].texture.name);
+        GUI.Box(new Rect(100, 100, 200, 25), "index: " + surfaceIndex.ToString() + ", name: " + terrainData.terrainLayers[surfaceIndex].name);
     }
-
+    */
 
     private float[] GetTextureMix(Vector3 WorldPos)
     {

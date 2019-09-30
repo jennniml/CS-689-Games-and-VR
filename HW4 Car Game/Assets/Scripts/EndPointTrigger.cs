@@ -7,11 +7,20 @@ public class EndPointTrigger : MonoBehaviour
 {
     public GameObject panel;
     public Text winText;
+    public CarControl car;
 
     // Car hit the end point trigger
     private void OnTriggerEnter(Collider other)
     {
-        winText.text = "You Win!";
+        if (car.GetPoints()>15)
+        {
+            winText.text = "You Win!";
+        }
+        else
+        {
+            winText.text = "You Lose";
+        }
+        
         panel.SetActive(true);
         Time.timeScale = 0;
     }

@@ -14,7 +14,6 @@ public class CarControl : MonoBehaviour
     private CheckTerrain texture;
     private int oldTexture=1, newTexture;
     private int points;
-    public GameObject testing;
 
     // Start is called before the first frame update
     void Start()
@@ -29,7 +28,6 @@ public class CarControl : MonoBehaviour
     public void FixedUpdate()
     {
         MoveCar();
-        
     }
 
     // Update is called once per frame
@@ -38,15 +36,9 @@ public class CarControl : MonoBehaviour
         speed = rb.velocity.magnitude * 3.6f;
         textUI.UpdateSpeedUI(speed);
         carSound();
-        Debug.Log("old" + oldTexture);
-        CheckTexture();
         
+        CheckTexture();
     }
-
-    //void OnGUI()
-    //{
-       // GUI.Box(new Rect(100, 20, 200, 25), "old: " + oldTexture + ", new: " + newTexture);
-    //}
 
     // Car steering and acceleration
     private void MoveCar()
@@ -93,19 +85,26 @@ public class CarControl : MonoBehaviour
             {
                 // Decrease point by 1
                 points--;
+                GetComponent<AudioSource>().Play();
                 textUI.UpdatePointsUI(points);
             }
+            oldTexture = newTexture;
         }
-        oldTexture = newTexture;
     }
 
     // Plays car sound depending on speed
     private void carSound()
     {
-        while (speed > 0)
-        {
+        //while (speed > 0)
+        //{
             //GetComponent<AudioSource>().Play();
-        }
+        //}
+    }
+
+    // Returns the point amount
+    public int GetPoints()
+    {
+        return points;
     }
 
     [System.Serializable]
