@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class UIManager : MonoBehaviour
 {
     public Text speedText, pointsText;
+    public GameObject panel;
     
     // Start is called before the first frame update
     void Start()
@@ -25,6 +26,16 @@ public class UIManager : MonoBehaviour
     public void UpdateSpeedUI(float speed)
     {
         speedText.text = speed.ToString("F2") + " KM/H";
+    }
+
+    public void ShowInstructions()
+    {
+        panel.SetActive(true);
+    }
+
+    public void HideInstructions()
+    {
+        panel.SetActive(false);
     }
 
     // Reloads the Level
