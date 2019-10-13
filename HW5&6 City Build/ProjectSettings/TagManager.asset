@@ -3,7 +3,14 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Fire
+  - Red1
+  - Yellow1
+  - Green1
+  - Red2
+  - Yellow2
+  - Green2
   layers:
   - Default
   - TransparentFX
