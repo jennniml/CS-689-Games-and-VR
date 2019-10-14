@@ -11,6 +11,7 @@ TagManager:
   - Red2
   - Yellow2
   - Green2
+  - ui
   layers:
   - Default
   - TransparentFX
