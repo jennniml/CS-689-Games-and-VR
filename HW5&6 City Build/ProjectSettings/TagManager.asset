@@ -5,12 +5,6 @@ TagManager:
   serializedVersion: 2
   tags:
   - Fire
-  - Red1
-  - Yellow1
-  - Green1
-  - Red2
-  - Yellow2
-  - Green2
   - ui
   layers:
   - Default
