@@ -71,6 +71,7 @@
 		}
 
 		public void WaypointEvent(int waypointEvent){
+            
 			waypointList [waypointEvent - 1].waypointEvent.Invoke ();
 		}
 
