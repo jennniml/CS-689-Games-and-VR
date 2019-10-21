@@ -18,7 +18,7 @@
 
 		void OnTriggerEnter (Collider col) {
 			if(col.gameObject.tag == "Player"){
-				waypointController.WaypointEvent (waypointNumber);
+                waypointController.WaypointEvent (waypointNumber);
 				waypointController.ChangeTarget ();
 			}
 		}
