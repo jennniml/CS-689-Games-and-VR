@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class WaypointEvents : MonoBehaviour
 {
-    public Text pointText, objText, timerText, endTime, endPoints;
+    public Text pointText, objText, timerText, endTime, endPoints, endText;
     private string[] objMessages;
     private int points = 0, index = 0;
     private float startTime;
@@ -15,12 +15,12 @@ public class WaypointEvents : MonoBehaviour
     void Start()
     {
         objMessages = new string[6] {
-            "1st Objective: Inspect the boat",
-            "2nd Objective: Walk through the meadow",
-            "3rd Objective: Cross the bridge",
-            "4th Objective: Explore the campsite",
-            "5th Objective: Climb to the top of the hill",
-            "6th Objective: Travel around the mountain"
+            "1st Objective: \nInspect the boat",
+            "2nd Objective: \nWalk through the meadow",
+            "3rd Objective: \nCross the bridge",
+            "4th Objective: \nExplore the campsite",
+            "5th Objective: \nClimb to the top of the hill",
+            "6th Objective: \nTravel around the mountain"
         };
         pointText.text = "POINTS: 0";
         objText.text = objMessages[0];
@@ -35,6 +35,12 @@ public class WaypointEvents : MonoBehaviour
         string seconds = (t % 60).ToString("F2");
 
         timerText.text = minutes + ":" + seconds;
+
+        // Check if player fell off terrain
+        if (gameObject.transform.position.y<5)
+        {
+            GameOver();
+        }
     }
 
     // Waypoint event: Updates objective text
@@ -62,10 +68,20 @@ public class WaypointEvents : MonoBehaviour
     {
         Time.timeScale = 0;
         panel.SetActive(true);
-        pointText.gameObject.SetActive(false);
-        objText.gameObject.SetActive(false); 
-        timerText.gameObject.SetActive(false);
-        endTime.text = timerText.text;
+        endText.text = "Finished Exploring the Island";
+        HideText();
+        endTime.text = "Time: " + timerText.text;
+        endPoints.text = "Total Points: " + points;
+    }
+
+    // Player fell off terrain
+    void GameOver()
+    {
+        Time.timeScale = 0;
+        panel.SetActive(true);
+        endText.text = "Fell off the Island \nGame Over";
+        HideText();
+        endTime.text = "Time: " + timerText.text;
         endPoints.text = "Total Points: " + points;
     }
 
@@ -80,5 +96,12 @@ public class WaypointEvents : MonoBehaviour
     {
         points += 5;
         pointText.text = "POINTS: " + points;
+    }
+
+    void HideText()
+    {
+        pointText.gameObject.SetActive(false);
+        objText.gameObject.SetActive(false);
+        timerText.gameObject.SetActive(false);
     }
 }

@@ -65,6 +65,7 @@
   <ItemGroup>
     <Compile Include="Assets\BrokenVector\LowPolySurvivalEssentials\Example\Scripts\AnimatedFire.cs" />
     <Compile Include="Assets\LowPolyWater_Pack\Scripts\LowPolyWater.cs" />
+    <Compile Include="Assets\Scripts\UIManager.cs" />
     <Compile Include="Assets\Scripts\WaypointEvents.cs" />
     <Compile Include="Assets\TurnTheGameOn\Arrow WayPointer\Demo Scene\Scripts\CharacterControllerThirdPerson.cs" />
     <Compile Include="Assets\TurnTheGameOn\Arrow WayPointer\Demo Scene\Scripts\SmoothFollow.cs" />
