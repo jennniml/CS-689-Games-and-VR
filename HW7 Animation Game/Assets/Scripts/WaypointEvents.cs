@@ -5,10 +5,11 @@ using UnityEngine.UI;
 
 public class WaypointEvents : MonoBehaviour
 {
-    public Text pointText, objText, timerText;
+    public Text pointText, objText, timerText, endTime, endPoints;
     private string[] objMessages;
     private int points = 0, index = 0;
     private float startTime;
+    public GameObject panel;
 
     // Start is called before the first frame update
     void Start()
@@ -39,23 +40,39 @@ public class WaypointEvents : MonoBehaviour
     // Waypoint event: Updates objective text
     void OnTriggerEnter(Collider col)
     {
-        if (col.gameObject.tag == "Waypoint")
+        if (col.gameObject.tag == "Trigger")
         {
-            Debug.Log("Hit a waypoint!!!");
+            PlaySound();
+            Debug.Log(col.gameObject.tag);
+            index++; 
+            objText.text = objMessages[index];
+            UpdatePoints();
         }
-        
-        PlaySound();
-        UpdatePoints();
-        index++;
-        objText.text = objMessages[index];
-        
-        
+        if (col.gameObject.tag == "EndTrigger")
+        {
+            Debug.Log(col.gameObject.tag);
+            PlaySound();
+            UpdatePoints();
+            GameFinished();
+        }
+    }
+
+    // Player reached the last trigger
+    void GameFinished()
+    {
+        Time.timeScale = 0;
+        panel.SetActive(true);
+        pointText.gameObject.SetActive(false);
+        objText.gameObject.SetActive(false); 
+        timerText.gameObject.SetActive(false);
+        endTime.text = timerText.text;
+        endPoints.text = "Total Points: " + points;
     }
 
     // Plays sound
     void PlaySound()
     {
-
+        GetComponent<AudioSource>().Play();
     }
 
     // Update points
