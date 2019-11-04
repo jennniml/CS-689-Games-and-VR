@@ -93,5 +93,6 @@ namespace UnityStandardAssets.Vehicles.Aeroplane
             m_WindSoundSource.pitch = m_WindBasePitch + planeSpeed*m_WindSpeedPitchFactor;
             m_WindSoundSource.volume = Mathf.InverseLerp(0, m_WindMaxSpeedVolume, planeSpeed)*m_AdvancedSetttings.windMasterVolume;
         }
+
     }
 }
