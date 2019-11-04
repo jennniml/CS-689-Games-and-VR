@@ -6,6 +6,7 @@ public class CameraView : MonoBehaviour
 {
     public Camera firstPersonCamera;
     public Camera overheadCamera;
+    public Camera engineerCamera;
 
     // Start is called before the first frame update
     void Start()
@@ -26,17 +27,30 @@ public class CameraView : MonoBehaviour
         {
             ShowFirstPersonView();
         }
+        else if (Input.GetKeyDown(KeyCode.I))
+        {
+            ShowEngineerView();
+        }
     }
 
     public void ShowOverheadView()
     {
         firstPersonCamera.enabled = false;
         overheadCamera.enabled = true;
+        engineerCamera.enabled = false;
     }
 
     public void ShowFirstPersonView()
     {
         firstPersonCamera.enabled = true;
         overheadCamera.enabled = false;
+        engineerCamera.enabled = false;
+    }
+
+    public void ShowEngineerView()
+    {
+        firstPersonCamera.enabled = false;
+        overheadCamera.enabled = false;
+        engineerCamera.enabled = true;
     }
 }
