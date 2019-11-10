@@ -142,15 +142,11 @@
     <Compile Include="Assets\ImportedAssets\Standard Assets\Vehicles\Aircraft\Scripts\AeroplaneUserControl4Axis.cs" />
     <Compile Include="Assets\ImportedAssets\Standard Assets\Vehicles\Aircraft\Scripts\JetParticleEffect.cs" />
     <Compile Include="Assets\ImportedAssets\Standard Assets\Vehicles\Aircraft\Scripts\LandingGear.cs" />
-    <Compile Include="Assets\ImportedAssets\TurnTheGameOn\Arrow WayPointer\Demo Scene\Scripts\CharacterControllerThirdPerson.cs" />
-    <Compile Include="Assets\ImportedAssets\TurnTheGameOn\Arrow WayPointer\Demo Scene\Scripts\SmoothFollow.cs" />
-    <Compile Include="Assets\ImportedAssets\TurnTheGameOn\Arrow WayPointer\Demo Scene\Scripts\UserControlThirdPerson.cs" />
-    <Compile Include="Assets\ImportedAssets\TurnTheGameOn\Arrow WayPointer\Scripts\Waypoint.cs" />
-    <Compile Include="Assets\ImportedAssets\TurnTheGameOn\Arrow WayPointer\Scripts\WaypointController.cs" />
     <Compile Include="Assets\Scripts\AirplaneCollide.cs" />
     <Compile Include="Assets\Scripts\CameraRotate.cs" />
     <Compile Include="Assets\Scripts\CameraView.cs" />
     <Compile Include="Assets\Scripts\EndTrigger.cs" />
+    <Compile Include="Assets\Scripts\PlaneControl.cs" />
     <Compile Include="Assets\Scripts\Rotate.cs" />
     <Compile Include="Assets\Scripts\UImanager.cs" />
     <None Include="Assets\ImportedAssets\Standard Assets\Effects\GlassRefraction\Shaders\GlassStainedBumpDistort.shader" />
@@ -178,7 +174,6 @@
     <None Include="Assets\ImportedAssets\Standard Assets\Environment\Water\Water\Shaders\FXWaterPro.shader" />
     <None Include="Assets\ImportedAssets\Standard Assets\Effects\Projectors\Shaders\ProjectorMultiply.shader" />
     <None Include="Assets\ImportedAssets\Standard Assets\Cameras\CameraGuidelines.txt" />
-    <None Include="Assets\ImportedAssets\TurnTheGameOn\Arrow WayPointer\Read Me.txt" />
     <None Include="Assets\ImportedAssets\Standard Assets\Environment\Water\Water4\Shaders\WaterInclude.cginc" />
     <None Include="Assets\ImportedAssets\Standard Assets\Environment\Water\Water4\Shaders\FXWater4Advanced.shader" />
     <None Include="Assets\ImportedAssets\Standard Assets\ParticleSystems\Shaders\PriorityParticleAdd.shader" />

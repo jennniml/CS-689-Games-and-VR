@@ -69,7 +69,6 @@
     <Compile Include="Assets\ImportedAssets\Standard Assets\Editor\Water\Water4\SpecularLightingEditor.cs" />
     <Compile Include="Assets\ImportedAssets\Standard Assets\Editor\Water\Water4\WaterBaseEditor.cs" />
     <Compile Include="Assets\ImportedAssets\Standard Assets\Editor\Water\Water4\WaterEditorUtility.cs" />
-    <Compile Include="Assets\ImportedAssets\TurnTheGameOn\Arrow WayPointer\Scripts\Editor\Editor_WaypointController.cs" />
     <Reference Include="UnityEditor.TestRunner">
       <HintPath>C:/Users/jennn/Documents/CS689/CS-689-Games-and-VR/HW8 Flight Simulator/Library/ScriptAssemblies/UnityEditor.TestRunner.dll</HintPath>
     </Reference>
