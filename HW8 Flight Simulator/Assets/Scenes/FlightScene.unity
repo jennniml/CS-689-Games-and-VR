@@ -13228,6 +13228,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4cbf7b92779340439ca0659b3c698e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  flaps:
+  - {fileID: 412369421}
+  - {fileID: 1572345886}
+  - {fileID: 1261874074}
+  - {fileID: 904319932}
+  - {fileID: 688634153}
 --- !u!64 &357683127
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -14344,7 +14350,7 @@ GameObject:
   - component: {fileID: 412369422}
   m_Layer: 0
   m_Name: ElevatorRight
-  m_TagString: Untagged
+  m_TagString: Elevator
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14415,13 +14421,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 412369421}
-  m_LocalRotation: {x: 0.0009846803, y: -0.652808, z: -0.009936628, w: 0.7574576}
-  m_LocalPosition: {x: 6.536792, y: 8.256657, z: -29.215662}
-  m_LocalScale: {x: 1.2500001, y: 0.34999996, z: 8.750001}
+  m_LocalRotation: {x: -0.004907686, y: 0.07713343, z: -0.0038127212, w: 0.9970014}
+  m_LocalPosition: {x: 6.68, y: 8.07, z: -29.09}
+  m_LocalScale: {x: 8.5, y: 0.2, z: 1.5}
   m_Children: []
   m_Father: {fileID: 196002476}
   m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: -0.65800005, y: 8.493, z: -0.93600005}
+  m_LocalEulerAnglesHint: {x: -0.527, y: 8.85, z: -0.47900003}
 --- !u!1001 &413819415
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -24112,7 +24118,7 @@ GameObject:
   - component: {fileID: 688634154}
   m_Layer: 0
   m_Name: Rudder
-  m_TagString: Untagged
+  m_TagString: Rudder
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24183,13 +24189,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 688634153}
-  m_LocalRotation: {x: 0.4402899, y: -0.4312843, z: 0.55330354, w: 0.5603515}
-  m_LocalPosition: {x: 0, y: 15.324578, z: -28.97503}
-  m_LocalScale: {x: 1.2500002, y: 0.45000014, z: 7.5000014}
+  m_LocalRotation: {x: -0.06975647, y: 0, z: 0, w: 0.9975641}
+  m_LocalPosition: {x: -0.01, y: 15.02, z: -29.18}
+  m_LocalScale: {x: 0.2, y: 8, z: 1.5}
   m_Children: []
   m_Father: {fileID: 196002476}
   m_RootOrder: 9
-  m_LocalEulerAnglesHint: {x: 103.905, y: -89.073, z: -90}
+  m_LocalEulerAnglesHint: {x: -8, y: 0, z: 0}
 --- !u!1001 &689134826
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -31546,7 +31552,7 @@ GameObject:
   - component: {fileID: 904319933}
   m_Layer: 0
   m_Name: AileronLeft
-  m_TagString: Untagged
+  m_TagString: Aileron
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -31617,13 +31623,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 904319932}
-  m_LocalRotation: {x: -0.02100645, y: -0.7076077, z: -0.030716378, w: 0.705625}
-  m_LocalPosition: {x: -23.848345, y: 5.73014, z: -5.9064126}
-  m_LocalScale: {x: 1.25, y: 0.35000008, z: 8.750001}
+  m_LocalRotation: {x: 0, y: 0, z: -0.035771642, w: 0.99936}
+  m_LocalPosition: {x: -22.26, y: 5.52, z: -6.04}
+  m_LocalScale: {x: 12, y: 0.2, z: 1.5}
   m_Children: []
   m_Father: {fileID: 196002476}
   m_RootOrder: 7
-  m_LocalEulerAnglesHint: {x: -4.1930003, y: -0.132, z: -0.78200006}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -4.1}
 --- !u!1001 &904395652
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -42499,7 +42505,7 @@ GameObject:
   - component: {fileID: 1261874075}
   m_Layer: 0
   m_Name: AileronRight
-  m_TagString: Untagged
+  m_TagString: Aileron
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -42570,13 +42576,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1261874074}
-  m_LocalRotation: {x: 0.037886567, y: -0.7040864, z: 0.017520668, w: 0.7088865}
-  m_LocalPosition: {x: 23.900377, y: 5.7392836, z: -5.903852}
-  m_LocalScale: {x: 1.2500002, y: 0.35, z: 8.750002}
+  m_LocalRotation: {x: 0, y: 0, z: 0.035954755, w: 0.9993534}
+  m_LocalPosition: {x: 22.24, y: 5.52, z: -6.04}
+  m_LocalScale: {x: 12, y: 0.2, z: 1.5}
   m_Children: []
   m_Father: {fileID: 196002476}
   m_RootOrder: 8
-  m_LocalEulerAnglesHint: {x: 4.4960003, y: 0.32500002, z: -1.639}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 4.1210003}
 --- !u!1001 &1262205150
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -52235,7 +52241,7 @@ GameObject:
   - component: {fileID: 1572345887}
   m_Layer: 0
   m_Name: ElevatorLeft
-  m_TagString: Untagged
+  m_TagString: Elevator
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -52306,13 +52312,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1572345886}
-  m_LocalRotation: {x: 0.009872292, y: -0.7572596, z: -0.0005169729, w: 0.65303916}
-  m_LocalPosition: {x: -6.5377026, y: 8.265848, z: -29.235308}
-  m_LocalScale: {x: 1.2500001, y: 0.35000002, z: 8.750001}
+  m_LocalRotation: {x: 0.0047028745, y: -0.0771615, z: 0.0021144236, w: 0.9970053}
+  m_LocalPosition: {x: -6.69, y: 8.1, z: -29.09}
+  m_LocalScale: {x: 8.5, y: 0.2, z: 1.5}
   m_Children: []
   m_Father: {fileID: 196002476}
   m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 0.694, y: -8.458, z: -0.89500004}
+  m_LocalEulerAnglesHint: {x: 0.55600005, y: -8.85, z: 0.2}
 --- !u!224 &1572771314 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 6029561501131631315, guid: e62e8039ac4efe04caf6567ea3747b64,
@@ -59525,7 +59531,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1793068937}
   m_LocalRotation: {x: 0.058604848, y: -0, z: -0.00000001117587, w: 0.99828124}
-  m_LocalPosition: {x: -3.1, y: 18.76, z: -76.93}
+  m_LocalPosition: {x: -1.45, y: 23.5, z: -76.37}
   m_LocalScale: {x: 2.5000012, y: 2.4999998, z: 2.500001}
   m_Children: []
   m_Father: {fileID: 196002476}
