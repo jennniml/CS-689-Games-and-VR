@@ -145,9 +145,7 @@
     <Compile Include="Assets\Scripts\AirplaneCollide.cs" />
     <Compile Include="Assets\Scripts\CameraRotate.cs" />
     <Compile Include="Assets\Scripts\CameraView.cs" />
-    <Compile Include="Assets\Scripts\EndTrigger.cs" />
     <Compile Include="Assets\Scripts\PlaneControl.cs" />
-    <Compile Include="Assets\Scripts\Rotate.cs" />
     <Compile Include="Assets\Scripts\UImanager.cs" />
     <None Include="Assets\ImportedAssets\Standard Assets\Effects\GlassRefraction\Shaders\GlassStainedBumpDistort.shader" />
     <None Include="Assets\ImportedAssets\Standard Assets\Effects\ToonShading\Shaders\ToonBasic.shader" />

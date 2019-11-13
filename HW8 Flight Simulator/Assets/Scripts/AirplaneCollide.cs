@@ -24,7 +24,7 @@ public class AirplaneCollide : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.name == "AircraftPropeller" && seconds>9)
+        if (collision.gameObject.name == "Plane_Propellor01" && seconds>20)
         {
             Time.timeScale = 0;
             panel.SetActive(true);
