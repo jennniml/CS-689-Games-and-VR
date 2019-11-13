@@ -24,12 +24,17 @@ public class AirplaneCollide : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.name == "Plane_Propellor01" && seconds>20)
+        if (collision.gameObject.name == "Plane_Propellor01" && seconds>30)
         {
-            Time.timeScale = 0;
-            panel.SetActive(true);
-            endText.text = "Crashed";
             GetComponent<AudioSource>().Play();
+            Invoke("EndGame", 3);
         }
+    }
+
+    void EndGame()
+    {
+        Time.timeScale = 0;
+        panel.SetActive(true);
+        endText.text = "Crashed";
     }
 }

@@ -352,17 +352,17 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
-    - target: {fileID: 6029561501506064748, guid: e62e8039ac4efe04caf6567ea3747b64,
-        type: 3}
-      propertyPath: m_Name
-      value: InstrText
-      objectReference: {fileID: 0}
     - target: {fileID: 6029561501506064746, guid: e62e8039ac4efe04caf6567ea3747b64,
         type: 3}
       propertyPath: m_Text
       value: 'INSTRUCTIONS
 
 '
+      objectReference: {fileID: 0}
+    - target: {fileID: 6029561501506064748, guid: e62e8039ac4efe04caf6567ea3747b64,
+        type: 3}
+      propertyPath: m_Name
+      value: InstrText
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e62e8039ac4efe04caf6567ea3747b64, type: 3}
@@ -528,11 +528,6 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
-    - target: {fileID: 6029561501506064748, guid: e62e8039ac4efe04caf6567ea3747b64,
-        type: 3}
-      propertyPath: m_Name
-      value: BackText
-      objectReference: {fileID: 0}
     - target: {fileID: 6029561501506064746, guid: e62e8039ac4efe04caf6567ea3747b64,
         type: 3}
       propertyPath: m_Text
@@ -552,6 +547,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Color.b
       value: 0.3584906
+      objectReference: {fileID: 0}
+    - target: {fileID: 6029561501506064748, guid: e62e8039ac4efe04caf6567ea3747b64,
+        type: 3}
+      propertyPath: m_Name
+      value: BackText
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e62e8039ac4efe04caf6567ea3747b64, type: 3}
@@ -1288,7 +1288,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 220, y: 220}
+  m_SizeDelta: {x: 260, y: 220}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1904147721
 MonoBehaviour:
@@ -1323,8 +1323,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Win: Collect all 6 objects\n\nLose: Avoid the terrain\n\nPOV: [P]   Airplane\n
-    \       [O]  Cockpit\n        [I]    Engineer"
+  m_Text: "Space Bar : Accelerate\nA/D : Left/Right Roll and Yaw\nW/S: Up/ Down Pitch\n\nPOV:
+    [P]   Airplane\n        [O]  Cockpit\n        [I]    Engineer"
 --- !u!222 &1904147722
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1480,15 +1480,15 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
-    - target: {fileID: 6029561501506064748, guid: e62e8039ac4efe04caf6567ea3747b64,
-        type: 3}
-      propertyPath: m_Name
-      value: ExitText
-      objectReference: {fileID: 0}
     - target: {fileID: 6029561501506064746, guid: e62e8039ac4efe04caf6567ea3747b64,
         type: 3}
       propertyPath: m_Text
       value: EXIT
+      objectReference: {fileID: 0}
+    - target: {fileID: 6029561501506064748, guid: e62e8039ac4efe04caf6567ea3747b64,
+        type: 3}
+      propertyPath: m_Name
+      value: ExitText
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e62e8039ac4efe04caf6567ea3747b64, type: 3}
@@ -1724,15 +1724,15 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
       value: FlightScene
       objectReference: {fileID: 0}
-    - target: {fileID: 6029561501506064748, guid: e62e8039ac4efe04caf6567ea3747b64,
-        type: 3}
-      propertyPath: m_Name
-      value: PlayText
-      objectReference: {fileID: 0}
     - target: {fileID: 6029561501506064746, guid: e62e8039ac4efe04caf6567ea3747b64,
         type: 3}
       propertyPath: m_Text
       value: PLAY
+      objectReference: {fileID: 0}
+    - target: {fileID: 6029561501506064748, guid: e62e8039ac4efe04caf6567ea3747b64,
+        type: 3}
+      propertyPath: m_Name
+      value: PlayText
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e62e8039ac4efe04caf6567ea3747b64, type: 3}

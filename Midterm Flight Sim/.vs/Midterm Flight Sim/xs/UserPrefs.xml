@@ -1,0 +1,27 @@
+﻿<Properties StartupConfiguration="{2890F235-7695-3A84-9BF2-995BD241A377}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/PlaneControl.cs">
+    <Files>
+      <File FileName="Assets/Scripts/PlaneControl.cs" Line="76" Column="67" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Midterm Flight Sim" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="Scripts" expanded="True">
+                <Node name="PlaneControl.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="dbbc8379-b5a5-4907-814d-4b98a6a02457" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

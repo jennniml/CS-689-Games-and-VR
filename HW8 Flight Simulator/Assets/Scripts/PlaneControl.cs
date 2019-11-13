@@ -14,6 +14,10 @@ public class PlaneControl : MonoBehaviour
     private Vector3 prevPos, currVel;
     private Quaternion originalRotate, tempRotate;
 
+    private Vector3 lift;
+    public float enginePower = 40, liftBooster = 0.2f;
+    private float rotateAmount = 0.25f;
+
     public float power;
     public Vector3 tempPosition;
 
@@ -27,12 +31,11 @@ public class PlaneControl : MonoBehaviour
     private void FixedUpdate()
     {
         // Read input for the pitch, yaw, roll and throttle of the aeroplane.
-        pitch = Input.GetAxis("Vertical") * Time.deltaTime * 50f;
-        rollyaw = Input.GetAxis("Horizontal") * Time.deltaTime * 50f;
-        //Vector3 movement = new Vector3(pitch, 0.0f, rollyaw);
-        //rb.AddForce(movement * 0.5f);
 
-        MovePlane();
+        pitch = Input.GetAxis("Vertical");
+        rollyaw = Input.GetAxis("Horizontal");
+
+        MovingPlane();
     }
 
     // Update is called once per frame
@@ -43,52 +46,49 @@ public class PlaneControl : MonoBehaviour
         Debug.Log("ROLLYAW: " + rollyaw);
         Debug.Log("PITCH: " + pitch);
         Debug.Log("SPEED: " + curSpeed);
-        //transform.position += transform.forward * Time.deltaTime * 10.0f;
-        //transform.Rotate(-Input.GetAxis("Vertical"), Input.GetAxis("Horizontal"), -Input.GetAxis("Horizontal"));
+        
+        Vector3 moveCamTo = transform.position - transform.forward * 20.0f + Vector3.up * 8.0f;
+        Camera.main.transform.position = moveCamTo;
+        Camera.main.transform.LookAt(transform.position);
     }
 
-    void MovePlane()
+    void MovingPlane()
     {
         MoveFlaps();
-        /*
-        if (curSpeed>maxSpeed)
-        {
-            rb.velocity = new Vector3(maxSpeed, 10, 0);
-        }
-        if (curSpeed < 20f)
-        {
-            transform.Rotate(-pitch/2f, rollyaw, -rollyaw/2.5f);
-            prevSpeed = curSpeed;
-        }
-        else
-        {
-            if (pitch>0.5)
-            {
-                transform.Rotate(-pitch/2f, rollyaw, -rollyaw/2.5f);
-                prevSpeed = curSpeed;
-            }
-            else
-            {
-                prevSpeed--;
-            }
-        }*/
 
-        if (curSpeed<20)
+        //Add force from jet engine 
+        if (Input.GetKey(KeyCode.Space))
         {
-            transform.Rotate(-pitch/1.5f, rollyaw, -rollyaw);
+            rb.AddForce(transform.forward * enginePower);
         }
-        else
+        if (Input.GetAxis("Horizontal") < 0)
         {
-            transform.Rotate(-pitch, rollyaw, -rollyaw);
+            transform.Rotate(0, -rotateAmount, 0);
+        }
+        else if (Input.GetAxis("Horizontal") > 0)
+        {
+            transform.Rotate(0, rotateAmount, 0);
         }
 
-        transform.position += transform.forward * Time.deltaTime * (curSpeed*.5f);
-        //rb.AddForce(Vector3.forward * power * (curSpeed));
-        
+        //Add lift force 
+        lift = Vector3.Project(rb.velocity, transform.forward);
+        rb.AddForce(transform.up * lift.magnitude * liftBooster);
 
+        //Banking controls, turning turning left and right on Z axis
+        rb.AddTorque(rollyaw * transform.forward * -1f);
+
+        //Pitch controls, turning the nose up and down
+        rb.AddTorque(-pitch * transform.right);
+
+            //Set drag and angular drag according relative to speed
+            rb.drag = 0.001f * rb.velocity.magnitude;
+            rb.angularDrag = 0.01f * rb.velocity.magnitude;
+       
     }
 
-    void MoveFlaps()
+
+
+void MoveFlaps()
     {
         foreach (var flap in flaps)
         {
