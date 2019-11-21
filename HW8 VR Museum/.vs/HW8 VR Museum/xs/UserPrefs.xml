@@ -1,0 +1,30 @@
+﻿<Properties StartupConfiguration="{C0C2E2CA-2146-472E-67E0-F9A3B130BC99}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/MuseumItem.cs">
+    <Files>
+      <File FileName="Assets/Scripts/MuseumItem.cs" Line="11" Column="6" />
+      <File FileName="Assets/Scripts/VRLookWalk.cs" />
+      <File FileName="Assets/Scripts/DoorOpen.cs" Line="25" Column="32" />
+      <File FileName="Assets/Scripts/EnterMuseum.cs" Line="22" Column="29" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="HW8 VR Museum" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="Scripts" expanded="True">
+                <Node name="MuseumItem.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="c1024abc-f44d-4fcc-acee-353f3041b98c" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
