@@ -95,7 +95,7 @@ void MoveFlaps()
             if (flap.CompareTag("Elevator"))
             {
                 float num = 8.85f;
-                if (flap.name == "ElevatorLeft")
+                if (flap.name == "ElevatorLeftObject")
                 {
                     num = -num;
                 }
@@ -104,7 +104,7 @@ void MoveFlaps()
             }
             else if (flap.CompareTag("Aileron"))
             {
-                if (flap.name == "AileronRight")
+                if (flap.name == "AileronRightObject")
                 {
                     flap.transform.localRotation = Quaternion.Slerp(flap.transform.localRotation,
                         Quaternion.Euler(angle * rollyaw, 0, 4.1f), smooth * Time.deltaTime);
@@ -118,7 +118,7 @@ void MoveFlaps()
             else if (flap.CompareTag("Rudder"))
             {
                 flap.transform.localRotation = Quaternion.Slerp(flap.transform.localRotation,
-                    Quaternion.Euler(-8f, angle * -rollyaw, 0f), smooth * Time.deltaTime);
+                    Quaternion.Euler(-11.5f, angle * -rollyaw, (angle * -rollyaw)/-5f), smooth * Time.deltaTime);
             }
         }
     }
